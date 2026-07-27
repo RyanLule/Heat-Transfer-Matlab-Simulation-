@@ -44,14 +44,7 @@ m * cp * dT/dt = Q_heater(t) - U_loss * A_surf * (T - T_ambient)
 where `Q_heater(t)` is the PID controller output (heater power, saturated
 between 0 W and a maximum actuator limit).
 
-**Important modelling note:** the convective coefficient `h` calculated in
-`heat_transfer_analysis.m` describes internal wall-to-fluid heat transfer
-and is large (thousands of W/m².K), appropriate for forced convection
-inside the pipe. This is *not* reused as the ambient heat-loss coefficient
-in the control model — an insulated pipe loses heat to the surrounding air
-through a much smaller external coefficient (`U_loss`, ~15 W/m².K here).
-Conflating the two would make the setpoint unreachable with a realistically
-sized heater.
+
 
 ## Results
 
