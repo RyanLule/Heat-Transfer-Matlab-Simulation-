@@ -71,5 +71,4 @@ Running the scripts produces:
 - PID controller design (proportional, integral, derivative tuning) with
   actuator saturation and anti-windup
 - Numerical simulation via explicit time-stepping (Euler integration)
-- MATLAB scripting, plotting, and data handling (`.mat` file interchange
-  between scripts)
+- MATLAB scripting, plotting, and data handling 
