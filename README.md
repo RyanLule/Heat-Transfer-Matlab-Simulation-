@@ -8,13 +8,13 @@ heater power.
 
 This project has two parts, run in order:
 
-1. **`heat_transfer_analysis.m`** — Calculates the Reynolds number, Nusselt
+1. heat_transfer_analysis — Calculates the Reynolds number, Nusselt
    number (via the Dittus-Boelter correlation), and convective heat transfer
    coefficient for water flowing through a pipe at four velocities (0.5, 1.0,
    1.5, 2.0 m/s). Produces plots of Nu vs Re and h vs Re, and saves the
    results to `heat_transfer_results.mat` for use in the control script.
 
-2. **`pid_temperature_control.m`** — Uses a lumped-capacitance energy balance
+2. pid_temperature_control — Uses a lumped-capacitance energy balance
    to model the fluid in a pipe section being heated by a controllable
    heater, with heat loss to the surrounding air through an insulated pipe
    wall. A PID controller adjusts heater power to drive the fluid
